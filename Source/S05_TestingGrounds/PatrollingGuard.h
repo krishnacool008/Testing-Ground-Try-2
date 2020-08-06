@@ -11,10 +11,12 @@ class S05_TESTINGGROUNDS_API APatrollingGuard : public ACharacter
 {
 	GENERATED_BODY()
 
-		UPROPERTY(EditInstanceOnly, Category = "Patrol Route")
-		TArray<AActor*> PatrolPointsCPP;
+		
 
 public:
+	UPROPERTY(EditInstanceOnly, Category = "Petrol Route")// Make Getter Instead of public
+		TArray<AActor*> PatrolPointsCPP;
+
 	// Sets default values for this character's properties
 	APatrollingGuard();
 
