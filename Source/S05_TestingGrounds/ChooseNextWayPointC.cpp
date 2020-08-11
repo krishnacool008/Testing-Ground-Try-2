@@ -23,8 +23,8 @@ EBTNodeResult::Type UChooseNextWayPointC::ExecuteTask(UBehaviorTreeComponent& Ow
 	auto PatrolPoints = PetrolRoute->GetPetrolPoints();
     if (PatrolPoints.Num() == 0)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("No Petrol Points Are Set For A Guard"));
-		return EBTNodeResult::Failed;
+		//UE_LOG(LogTemp, Warning, TEXT("No Petrol Points Are Set For A Guard"));
+		return EBTNodeResult::Succeeded;
 	}
 
 	// Set The Patrol Points
